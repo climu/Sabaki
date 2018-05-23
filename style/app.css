@@ -4,15 +4,20 @@
  * Provides general styles for native app like behavior.
  */
 
-* {
+#sabaki{
+	position:relative;
+	height: 100%;
+	width:100%;
+}
+
+#sabaki * {
     margin: 0;
     padding: 0;
 }
 
+
 html, body {
     height: 100%;
-    overflow: hidden;
-    background: #111;
 }
 
 body, input, button, select, option, textarea {
@@ -21,9 +26,8 @@ body, input, button, select, option, textarea {
     line-height: 1.5;
 }
 
-body, a {
+#sabaki, a {
     cursor: default;
-    overflow: hidden;
     outline: 0;
     user-select: none;
     -ms-user-select: none;
@@ -62,7 +66,7 @@ img {
 
 #busy {
     display: none;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -72,7 +76,7 @@ img {
 }
 
 #input-box {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         right: 0;

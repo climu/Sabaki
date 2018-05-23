@@ -1986,4 +1986,4 @@ class App extends Component {
 
 // Render
 
-render(h(App), document.body)
+render(h(App), document.getElementById("sabaki"))
