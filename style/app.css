@@ -4,10 +4,17 @@
  * Provides general styles for native app like behavior.
  */
 
+#sabaki-container {
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+}
+
 #sabaki{
-	position:relative;
+	position: relative;
 	height: 100%;
-	width:100%;
+	width: 100%;
+    overflow: hidden;
 }
 
 #sabaki * {

@@ -105,10 +105,12 @@ header, #bar .bar {
         top: 50%;
         width: 35px;
         height: 22px;
-        margin-left: -17px;
-        margin-top: -11px;
     }
-    header > img { cursor: pointer; }
+    header > img {
+        cursor: pointer;
+        margin-left: -17px !important;
+        margin-top: -11px !important;
+    }
     #headermenu, header .undo {
         left: auto;
         right: 0;
