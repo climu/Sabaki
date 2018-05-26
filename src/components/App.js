@@ -257,9 +257,9 @@ class App extends Component {
 
         // Handle window closing
 
-        window.addEventListener('beforeunload', evt => {
-            evt.returnValue = ' '
-        })
+//        window.addEventListener('beforeunload', evt => {
+//            evt.returnValue = ' '
+//        })
 
         this.newFile()
     }
@@ -481,7 +481,7 @@ class App extends Component {
 
         let {extname} = require('path')
         let extension = extname(file.name).slice(1)
-        let content = await new Promise((resolve, reject) => 
+        let content = await new Promise((resolve, reject) =>
             fs.readFile(file, (err, content) => err ? reject(err) : resolve(content))
         )
 
@@ -1985,5 +1985,6 @@ class App extends Component {
 }
 
 // Render
-
-render(h(App), document.getElementById("sabaki"))
+load_sabaki = function (element){
+  render(h(App), element)
+}
